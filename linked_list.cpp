@@ -110,9 +110,9 @@ void linked_list::Display()	//create a function to go through and print each nod
 	}
 	Node* head = this->head;	//set head node equal to linked list's head value. Start from beginning.
 	int i = 1;			// create a counter variable to increment
-	cout << " ";
+	cout << head;
 	while (head) {		//while head has something print it, adjust pointers, increment it and repeat until there are no more nodes
-		//your code here
+		head = head->next;
 		//think how we can walk down the list with pointers and node's
 		i++;
 	}
